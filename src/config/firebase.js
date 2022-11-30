@@ -1,17 +1,18 @@
-import  firebase from "firebase"
-import 'firebase/storage';
-
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDkO9I17J8Kfc9yz4U8atDqasu6djnXMcA",
-    authDomain: "todolist-a482e.firebaseapp.com",
-    projectId: "todolist-a482e",
-    storageBucket: "todolist-a482e.appspot.com",
-    messagingSenderId: "891475667975",
-    appId: "1:891475667975:web:cbeae3d3253f5b75518ea2"
+  apiKey: "AIzaSyCdG0wUawKnSYWuly6it08qfT2sakUh9XE",
+  authDomain: "react-native-firebase-867b7.firebaseapp.com",
+  projectId: "react-native-firebase-867b7",
+  storageBucket: "react-native-firebase-867b7.appspot.com",
+  messagingSenderId: "674635372549",
+  appId: "1:674635372549:web:1c8ebc53643c66d533646c"
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const database = firebase.firestore();
-export default database
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+export const database = getFirestore(app);
