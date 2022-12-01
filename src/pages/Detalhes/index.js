@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import {View, Text, TextInput, TouchableOpacity, Alert}  from "react-native"
-import { collection, addDoc, doc, setDoc, getDoc, updateDoc, deleteDoc, deleteField } from "firebase/firestore";
+import { doc, updateDoc} from "firebase/firestore";
  
 import {database}  from "../../config/firebase"
 import styles from "./style";
@@ -19,6 +19,7 @@ export default function Detalhes({navigation, route}) {
                 "Sucesso",
                 "A tarefa foi editada.")
             console.log("A tarefa foi editada com sucesso");
+            window.location.reload(true);
             navigation.navigate("Tarefas")
         })
         .catch(erro => {

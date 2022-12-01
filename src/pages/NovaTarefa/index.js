@@ -26,7 +26,9 @@ export default function NovaTarefa({navigation}) {
                         "Sucesso",
                         "Tarefa adicionada com sucesso!")
                     console.log("Tarefa adicionada com sucesso!");
+                    window.location.reload(true);
                     navigation.navigate("Tarefas")
+     
                 })
                 .catch(error => {
                     console.log("Falha ao adicionar tarefa!");

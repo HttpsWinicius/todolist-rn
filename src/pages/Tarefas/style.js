@@ -13,19 +13,25 @@ const styles = StyleSheet.create({
   marginTop:5
  },
  deletarTarefaStyle:{
-   justifyContent:"center",
-   paddingLeft:15,
+  justifyContent:"center",
+  alignItems: "center",
+  paddingRight:18,
+ },
+ concluirTarefaStyle:{
+  justifyContent:"center",
+  alignItems: "center",
+  paddingRight:18,
  },
  descricaoTarefaStyle:{
   width:"75%",
   alignContent:"flex-start",
-  backgroundColor:"#f5f5f5cf",
+  backgroundColor:"#000",
   padding:12,
   paddingHorizontal: 20,
   borderRadius:50,
   marginBottom: 5,
   marginRight:15,
-  color:"#000",
+  color:"#fff",
  },
  botaoNovaTarefaStyle:{
   width:60,
